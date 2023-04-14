@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top:30px;
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  top:4vh;
+  width: 100%;
+}
+
+.letra {
+  margin-top:-50px;
+  margin-right: 20px;
+  width: 500px;
+  white-space: pre-wrap;
+}
+
+p {
+  margin-bottom:10px;
+}
+
+.video {
+  width: 500px;
+}
+
+.video iframe {
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  text-transform:capitalize;
+}
+
+
+h2 {
+  color:#2a5629;
+}
+
+#disqus_thread {
+  margin-left:10px;
+  margin-right:10px;
+}
+
+
+.but {
+  top:-25px;
+  right:145px;
+  position:relative;
+}
+
+.idioma {
+  background-color:rgb(246, 248, 246);
+  padding:3px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-left:5px;
+  border: 1px solid black;
+}
+
+.idioma:hover {
+  background-color:rgb(235, 255, 234);
+}
+
+
+
+@media screen and (max-width:768px) {
+  .but {
+    top:-25px;
+    left:0;
+    right:-30vh;
+    position:relative;
+    text-align:center;
+  }
+  
+  .idioma {
+    background-color:rgb(246, 248, 246);
+    padding:3px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-left:5px;
+    border: 1px solid black;
+    width:60px;
+  }
+}
+

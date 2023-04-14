@@ -1,0 +1,262 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+
+  body {
+    font-size:1.4vh;
+    color:#fff;
+    text-align:center;
+  }
+
+  ul {
+  list-style: none;
+  }
+  
+  .background {
+  background: url("../bg2.jpg") no-repeat center center;
+  background-size: cover;
+  }
+  
+  main {
+  height: 88.5vh;
+  font-family: arial;
+  }
+  
+  /* PÁGINA DE MÚSICAS */
+  .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 15px;
+  width: 70vh;
+  height: 70vh;
+  color: #f6f6f6;
+  background-color:#0000008c;
+  }
+  
+  fieldset {
+  height: 100%;
+  border: 2px solid #cac9c9;
+  border-radius: 8px;
+  padding: 10px;
+  }
+  
+  a {
+  color: rgba(255, 255, 255, 0.772);
+  text-decoration: none;
+  padding: 6px;
+  }
+  
+  a:hover {
+  background-color: #4b4b4b;
+  }
+  
+  .coluna1 {
+  float: left;
+  width: 50%;
+  }
+  
+  .coluna2 {
+  margin-left: 10px;
+  float: left;
+  }
+  
+  .lista-musicas h1 {
+  margin-top:2px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.772);
+  text-decoration: underline rgba(255, 255, 255, 0.258);
+  }
+  
+  h1 {
+  cursor: pointer;
+  text-transform:capitalize;
+  }
+  
+  .lista-musicas {
+    display:grid;
+    justify-content: center;
+    text-align:left;
+  }
+
+  .lista-musicas li {
+  padding: 2px;
+  margin: 10px;
+  margin-top:0px;
+  word-spacing: 0px;
+  font-size:1.2em;
+  }
+  
+  #musicas {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  font-size: 1.1em;
+  }
+
+  #musicas-list {
+    margin-top: 30px;
+  }
+
+
+  .pagination {
+    position:relative;
+    display: flex;
+    left:50%;
+    bottom:3vh;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination a {
+    color: #ffffff;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color:rgba(34, 34, 34, 0.222);
+  }
+  
+
+  
+  .pagination a:hover {
+    background-color: #ddd;
+  }
+  
+  
+  ::-webkit-scrollbar {
+  width: 6px;
+  background-color: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background-color: #4b4b4b;
+  border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  background-color: #dfdfdf8b;
+  }
+  
+  /* LETRA E VÍDEO */
+  .fundo-letra {
+  height: 500%;
+  background-color: #d9ddd9;
+  color: rgb(0, 0, 0);
+  }
+  
+  .container {
+    margin-top:30px;
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    top:4vh;
+    width: 100%;
+}
+  
+  .letra {
+  margin-right: 20px;
+  width: 500px;
+  }
+  
+  .video {
+  width: 500px;
+  }
+  
+  .video iframe {
+  width: 100%;
+  }
+  
+  
+  /* SLIDESHOW */
+
+  .desktop {
+    display:block;
+  }
+
+
+  .mobile {
+    display:none;
+  }
+
+
+  .content {
+    height: auto;
+    width: 90%;
+    max-width: 935px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .navigation {
+    position: absolute;
+    bottom:1px;
+    left:50%;
+    transform: translate(-50%);
+    display:flex;
+  }
+  
+
+  .bar {
+    width:3vh;
+    height:1.5vh;
+    border: 1px solid #ffffffd6;
+    margin: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .4s;
+    margin-bottom:2px;
+    background-color:#0000006c;
+  }
+
+  .bar:hover{
+    background-color:#fff;
+  }
+
+  input {
+    display:none;
+  }
+
+  .slides {
+    display:flex;
+    width:300%;
+    height:100%;
+  }
+
+  .slide {
+    width:33.4%;
+    transition: 0.6s;
+  }
+
+  .slide img {
+    width:100%;
+    height:100%;
+    opacity:0.95;
+  }
+
+  #slide1:checked ~ .s1 {
+    margin-left:0;
+  }
+
+  #slide2:checked ~ .s1 {
+    margin-left:-33.6%;
+  }
+
+  #slide3:checked ~ .s1 {
+    margin-left:-67%;
+  }
